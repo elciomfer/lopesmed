@@ -319,7 +319,7 @@ export default function Home() {
       </section>
 
       {/* Diferenciais */}
-      <section id="benefits" className={cn(section, "bg-background")}>
+      <section id="benefits" className={cn(section, "bg-muted")}>
         <h2 className="text-4xl font-semibold tracking-tight text-balance">Saúde e segurança, lado a lado.</h2>
         <p className="mt-3 max-w-xl text-pretty text-muted-foreground">
           Mais do que exames: um parceiro para manter sua empresa protegida e sua equipe bem cuidada.
@@ -396,7 +396,7 @@ export default function Home() {
       {/* Contato */}
       <section
         id="contact"
-        className={cn(section, "grid content-center gap-10 bg-muted md:grid-cols-2 md:items-center")}
+        className={cn(section, "grid content-center gap-10 bg-background md:grid-cols-2 md:items-center")}
       >
         <header>
           <h2 className="text-4xl font-semibold tracking-tight md:text-5xl">Vamos conversar.</h2>
