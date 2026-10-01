@@ -10,6 +10,11 @@ export const company = {
     schema: "+55-47-9999-2929",
   },
   whatsapp: "https://wa.me/554799992929",
+  whatsappNumbers: [
+    { display: "(47) 99999-2929", href: "https://wa.me/5547999992929" },
+    { display: "(47) 99230-6150", href: "https://wa.me/5547992306150" },
+  ],
+  instagram: { handle: "@lopesmedt", href: "https://instagram.com/lopesmedt" },
   email: "contato@lopesmed.com.br",
   address: {
     street: "Rua Adolfo Konder, 143, Sala 1",
