@@ -3,16 +3,16 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, MessageCircle, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { sections } from "@/constants/sections";
+import { Button } from "@/components/ui/button";
 import { company } from "@/constants/company";
+import { sections } from "@/constants/sections";
 
 export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 grid grid-cols-[1fr_auto_auto] items-center gap-x-2 border-b border-border/50 bg-background/80 px-[max(1rem,calc((100%-980px)/2))] text-xs backdrop-blur-xl backdrop-saturate-150 select-none sm:grid-cols-[1fr_auto_1fr]">
+    <header className="fixed inset-x-0 top-0 z-50 grid grid-cols-[1fr_auto_auto] items-center gap-x-2 px-[max(1rem,calc((100%-980px)/2))] text-xs backdrop-blur backdrop-saturate-150 select-none sm:grid-cols-[1fr_auto_1fr]">
       <Link
         href="/"
         onClick={() => setOpen(false)}
@@ -36,7 +36,7 @@ export function Header() {
             onClick={() => setOpen(false)}
             className="py-2 text-2xl font-semibold text-foreground/80 transition-colors hover:text-foreground sm:py-0 sm:text-xs sm:font-normal"
           >
-            {s.title}
+            {s.label}
           </Link>
         ))}
       </nav>
@@ -45,13 +45,7 @@ export function Header() {
         size="xs"
         className="rounded-full px-3 sm:justify-self-end"
         nativeButton={false}
-        render={
-          <a
-            href={company.whatsapp}
-            target="_blank"
-            rel="noopener noreferrer"
-          />
-        }
+        render={<a href={company.whatsapp} target="_blank" rel="noopener noreferrer" />}
       >
         <MessageCircle /> Entre em contato
       </Button>

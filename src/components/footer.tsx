@@ -12,24 +12,18 @@ export function Footer() {
         <h2 className="font-semibold text-foreground">Navegação</h2>
         {sections.map((s) => (
           <Link key={s.id} href={`#${s.id}`} className="w-fit hover:underline">
-            {s.title}
+            {s.label}
           </Link>
         ))}
       </nav>
 
       <address className="flex flex-col gap-2 not-italic">
         <span className="font-semibold text-foreground">Contato</span>
-        <a
-          href={company.phone.href}
-          className="flex w-fit items-center gap-1.5 hover:underline"
-        >
+        <a href={company.phone.href} className="flex w-fit items-center gap-1.5 hover:underline">
           <Phone className="size-3" />
           {company.phone.display}
         </a>
-        <a
-          href={`mailto:${company.email}`}
-          className="flex w-fit items-center gap-1.5 hover:underline"
-        >
+        <a href={`mailto:${company.email}`} className="flex w-fit items-center gap-1.5 hover:underline">
           <Mail className="size-3" />
           {company.email}
         </a>
@@ -44,10 +38,7 @@ export function Footer() {
       </address>
 
       <p className="flex flex-col gap-2">
-        <Link
-          href="/"
-          className="w-fit text-sm font-semibold uppercase tracking-tight text-primary"
-        >
+        <Link href="/" className="w-fit text-sm font-semibold uppercase tracking-tight text-primary">
           {company.brand}
         </Link>
         Saúde, segurança e medicina do trabalho

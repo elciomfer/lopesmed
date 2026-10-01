@@ -33,9 +33,9 @@ export function Background() {
     <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
       <div className="absolute inset-x-0 bottom-0 h-40 bg-linear-to-b from-transparent to-background" />
       <div className="absolute top-1/2 left-1/2 size-[min(72rem,170vw)] -translate-x-1/2 -translate-y-1/2 opacity-60 dark:opacity-35">
-        <div className="absolute top-[30%] left-[10%] size-[40%] rounded-full bg-sky-500 blur-3xl motion-safe:animate-aurora" />
-        <div className="absolute top-[40%] right-[10%] size-[50%] rounded-full bg-teal-400 blur-3xl motion-safe:animate-aurora" />
-        <div className="absolute top-[50%] bottom-[30%] size-[60%] rounded-full bg-emerald-300 blur-3xl motion-safe:animate-aurora" />
+        <div className="absolute top-[30%] left-[10%] size-[40%] rounded-full bg-emerald-500 blur-3xl motion-safe:animate-aurora" />
+        <div className="absolute top-[40%] right-[10%] size-[50%] rounded-full bg-green-400 blur-3xl motion-safe:animate-aurora" />
+        <div className="absolute top-[50%] bottom-[30%] size-[60%] rounded-full bg-lime-300 blur-3xl motion-safe:animate-aurora" />
       </div>
       <div className="absolute inset-x-0 bottom-0 h-40 bg-linear-to-b from-transparent to-background" />
       {hips.map(({ icon: Icon, label, position, delay }) => (
